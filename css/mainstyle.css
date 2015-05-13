@@ -2,25 +2,44 @@
 Main site colors:
 
 Light Blue: #00B6FF
+  rgb(0, 182, 255)
 Dark Blue: #2A2669
+  rgb(42, 38, 105)
 Grey: #D1D1D1
+  rgb(209, 209, 209)
 
 */
 
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}
+
 body {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Arimo', sans-serif;
   margin-top: 0;
   padding-top: 0;
-  background-color: #D1D1D1;
+  /*background-color: #D1D1D1;*/
+  background-color: rgba(209, 209, 209, 0.3);
   color: #2A2669;
 }
 
 main {
-  background-color: #00B6FF;
+  /*background-color: #00B6FF;*/
+  background-color: rgba(0, 182, 255, 0.3);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Arvo', serif;
+  font-family: 'Michroma', serif;
 }
 
 a {
@@ -40,17 +59,18 @@ a:hover {
 }
 
 header {
-  background-color: #D1D1D1;
+  /*background-color: #D1D1D1;*/
+  background-color: rgba(209, 209, 209, 0.3);
   height: 195px;
 }
 
-header>ul {
+header ul {
   list-style: none;
   float: right;
   margin: 125px 20px 0 0;
 }
 
-header>ul>li {
+header li {
   display: inline-block;
   clear:right;
   padding: 0 15px;
@@ -58,7 +78,8 @@ header>ul>li {
 }
 
 #gallery {
-  background: linear-gradient(#D1D1D1, #D1D1D1 90%, #00B6FF);
+  /*background: linear-gradient(#D1D1D1, #D1D1D1 90%, #00B6FF);*/
+  background: linear-gradient(rgba(209, 209, 209, 0.3), rgba(209, 209, 209, 0.3) 90%, rgba(0, 182, 255, 0.3));
   clear: right;
   padding: 0 0 0 0.5%;
 }
@@ -74,11 +95,15 @@ header>ul>li {
   margin: 90px 0 0 10px;
 }
 
-#main-svc>ul {
+#services {
+  display: block;
+}
+
+#main-svc ul {
   padding: 0;
 }
 
-#main-svc>ul>li {
+#main-svc li {
   display: inline-block;
   clear: right;
   width: 25%;
@@ -115,4 +140,54 @@ header>ul>li {
   top: 35%;
   left: 20%;
   z-index: 10;
+}
+
+.icon-desc {
+  text-align: center;
+}
+
+#secondary-svc {
+  margin: 0;
+  padding: 0;
+}
+
+#secondary-svc h1 {
+  font-size: 1.1em;
+  text-align: center
+}
+
+#secondary-svc ul {
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#secondary-svc li {
+  padding: 0 5%;
+  display: inline;
+  float: left;
+  width: 40%;
+}
+/*
+#secondary-svc>ul li:nth-of-type(4n+5) {
+  clear:left;
+}*/
+
+#about-us {
+  margin-top: 10px;
+}
+
+#about-us img {
+  width: 25%;
+  display: inline;
+  float: left;
+  padding: 0 2.5% 0 5%;
+}
+
+#about-us p {
+  width: 60%;
+  display: inline;
+  float: left;
+  padding: 0 5% 0 2.5%;
 }
