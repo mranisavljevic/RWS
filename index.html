@@ -2,8 +2,9 @@
 <html>
 <head>
   <title>Rainier Waste Solutions</title>
-  <link href='http://fonts.googleapis.com/css?family=Michroma|Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,900,400italic' rel='stylesheet' type='text/css'>
   <!--
+  <link href='http://fonts.googleapis.com/css?family=Michroma|Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
   -->
@@ -14,9 +15,9 @@
   <link rel="icon" href="RWS_favicon/favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <header>
+  <header class="clearfix">
     <img src="img/Logo.png" id="mainlogo" alt="Rainer Waste Solutions Logo">
-    <ul>
+    <ul class="clearfix">
       <li><h1><a href="#services">Services</a></h1></li>
       <li><h1><a href="#about-us">About</a></h1></li>
       <li><h1><a href="#contact-us">Contact</a></h1></li>
@@ -49,7 +50,7 @@
           </li>
           <li class="svc-icon" id="waste-auditing">
             <div class="icon-back">
-              <img class="icon-img" src="img/icons/Placeholder@2x.png" alt="Waste Auditing icon">
+              <img class="icon-img-special" src="img/icons/MagnifyingGlass@2x.png" alt="Waste Auditing icon">
             </div>
             <h1 class="icon-desc">Waste Auditing</h1>
             <p class="svc-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -95,15 +96,15 @@
     </div>
     <div id="about-us" class="clearfix">
       <h1 class="section-title">About Us</h1>
-      <img src="img/cart_delivery.jpg" alt="Cart Delivery">
+      <img src="img/Delivery.jpg" alt="Cart Delivery">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </div>
     <div id="contact-us">
       <h1 class="section-title">Contact Us</h1>
       <a href="mailto:chris@rainierwastesolutions.com">Chris@RainierWasteSolutions.com</a>
-      <a href="tel:206-999-6607">Call: (206) 999-6607</a>
-      <a href="sms:206-999-6607">Text: (206) 999-6607</a>
+      <p id="phone-p">(206) 999-6607</p>
+      <a href="tel:206-999-6607" style="display: none" id="phone-a">Call: (206) 999-6607</a>
     </div>
     <div id="social-links">
       <h1 class="section-title">Social</h1>
