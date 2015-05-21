@@ -102,6 +102,7 @@ header li {
 
 #main-svc li {
   display: inline-block;
+  background-color: #F9F9F9;
   clear: right;
   width: 25%;
   padding: 10px 4%;
@@ -195,7 +196,7 @@ header li {
 
 #secondary-svc h1 {
   font-size: 1.1em;
-  text-align: center
+  text-align: center;
 }
 
 #secondary-svc ul {
@@ -206,6 +207,7 @@ header li {
 }
 
 #secondary-svc li {
+  background-color: #F9F9F9;
   padding: 0 2.5%;
   margin: 16px 2.5%;
   display: inline;
@@ -250,6 +252,7 @@ header li {
 }
 
 #contact-title {
+  background-color: #F9F9F9;
   width: 50%;
   margin: auto;
   padding: 2.5%;
