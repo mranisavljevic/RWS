@@ -55,12 +55,11 @@ a:visited {
 }
 
 a:hover {
-  color: #00B6FF;
+  color: slategrey;
 }
 
 header {
   background-color: rgba(209, 209, 209, 0.5);
-  /*height: 195px;*/
 }
 
 header ul {
@@ -105,7 +104,11 @@ header li {
   display: inline-block;
   clear: right;
   width: 25%;
-  padding: 0 4%;
+  padding: 10px 4%;
+  border-radius: 2%;
+  box-shadow: 0 0 10px slategrey;
+  -webkit-box-shadow: 0 0 10px slategrey;
+  -moz-box-shadow: 0 0 10px slategrey;
 }
 
 .section-title {
@@ -116,7 +119,7 @@ header li {
 }
 
 .icon-back {
-  background-image: url("../img/icons/background@2x.png");
+  background-image: url("../img/icons/Background@2x.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -154,9 +157,40 @@ header li {
   text-align: center;
 }
 
+#show-more {
+  width: 100%;
+  margin: 50px 0;
+}
+
+#button-label {
+  text-align: center;
+  margin: 0;
+}
+
+.more-less {
+  margin: auto;
+  display: block;
+  width: 10%;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  color: #2A2669;
+}
+
+.more-less img {
+  width: 100%;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
 #secondary-svc {
   margin: 0;
-  padding: 0;
+  padding: 80px 0 0;
 }
 
 #secondary-svc h1 {
@@ -172,10 +206,15 @@ header li {
 }
 
 #secondary-svc li {
-  padding: 0 5%;
+  padding: 0 2.5%;
+  margin: 16px 2.5%;
   display: inline;
   float: left;
   width: 40%;
+  border-radius: 2%;
+  box-shadow: 0 0 10px slategrey;
+  -webkit-box-shadow: 0 0 10px slategrey;
+  -moz-box-shadow: 0 0 10px slategrey;
 }
 
 #about-us {
@@ -195,4 +234,36 @@ header li {
   display: inline;
   float: left;
   padding: 0 4.5% 0 2.5%;
+}
+
+#contact-us h2 {
+  text-align: center;
+}
+
+#contact-us h3 {
+  margin: 5px 0;
+}
+
+#contact-us p {
+  margin: 5px 0;
+  padding: 0;
+}
+
+#contact-title {
+  width: 50%;
+  margin: auto;
+  padding: 2.5%;
+  border-radius: 2%;
+  box-shadow: 0 0 10px slategrey;
+  -webkit-box-shadow: 0 0 10px slategrey;
+  -moz-box-shadow: 0 0 10px slategrey;
+}
+
+#contact-info{
+  margin: 20px 0;
+}
+
+footer {
+  margin-top: 250px;
+  text-align: center;
 }

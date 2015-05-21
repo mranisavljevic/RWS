@@ -1,0 +1,43 @@
+@media screen and (max-width: 1110px){
+
+  .section-title {
+    font-size: 3em;
+  }
+
+  body {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 800px){
+
+  header ul {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+  }
+
+  #mainlogo {
+    width: 50%;
+    margin: 90px 25% 0;
+  }
+
+  body {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 595px){
+
+  body {
+    font-size: 0.6em;
+  }
+}
+
+@media screen and (max-width: 445px){
+
+  body {
+    font-size: 0.4em;
+  }
+}
