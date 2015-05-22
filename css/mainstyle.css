@@ -191,7 +191,7 @@ header li {
 
 #secondary-svc {
   margin: 0;
-  padding: 80px 0 0;
+  padding: 20px 0 0;
 }
 
 #secondary-svc h1 {
@@ -254,6 +254,7 @@ header li {
 #contact-title {
   background-color: #F9F9F9;
   width: 50%;
+  min-width: 335px;
   margin: auto;
   padding: 2.5%;
   border-radius: 2%;
@@ -264,6 +265,10 @@ header li {
 
 #contact-info{
   margin: 20px 0;
+}
+
+#phone-a {
+  display: none;
 }
 
 footer {

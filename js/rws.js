@@ -14,9 +14,9 @@ $(document).ready(function() {
 
   $("#collapse").on("click", function() {
       $(document)
-        .scrollTop($("#main-svc")
-            .offset()
-            .top);
+        .scrollTop($("#services")
+          .offset()
+          .top);
   });
 
   var testAnim = function(icon) {
