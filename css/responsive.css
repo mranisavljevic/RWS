@@ -79,7 +79,7 @@
   }
 
   #about-us p {
-  width: 60%;
+  width: 70%;
   display: block;
   float: none;
   margin: auto;
@@ -102,7 +102,17 @@
 
 @media screen and (max-width: 445px){
 
-  /*body {
-    font-size: 0.4em;
-  }*/
+  .gallery-img {
+    width: 32%;
+  }
+}
+
+@viewport {
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+@-ms-viewport {
+    width: extend-to-zoom;
+    zoom: 1.0;
 }
