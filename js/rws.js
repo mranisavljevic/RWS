@@ -14,7 +14,7 @@ $(document).ready(function() {
 
   $("#collapse").on("click", function() {
       $(document)
-        .scrollTop($("#services")
+        .scrollTop($("#show-more")
           .offset()
           .top);
   });
