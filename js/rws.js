@@ -19,6 +19,14 @@ $(document).ready(function() {
           .top);
   });
 
+  $("form").on("submit", function(e) {
+    e.preventDefault();
+    $(this).done(function() {
+      $("<h1>Submitted</h1>").insertBefore("#submit-button");
+      $("#submit-button").hide();
+    });
+  });
+
   var testAnim = function(icon) {
     $(icon).addClass('tada')
       .on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){

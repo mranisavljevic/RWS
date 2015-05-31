@@ -114,9 +114,9 @@
       <h1 class="section-title">Contact</h1>
       <div id="contact-title">
         <h2>Quotes & General Information</h2>
-        <h3>Chris Bridges</h3>
+        <h4>Chris Bridges</h4>
         <p><em>Owner</em></p>
-        <div id="contact-info">
+        <div id="contact-info" class="clearfix">
           <p><em>Mail: </em><a href="mailto:chris@rainierwastesolutions.com">Chris@RainierWasteSolutions.com</a></p>
           <p id="phone-p"><em>Phone: </em>(206) 999-6607</p>
           <p id="phone-a"><em>Phone: </em><a href="tel:206-999-6607">(206) 999-6607</a></p>
@@ -125,21 +125,24 @@
           <p>PO Box 16733</p>
           <p>Seattle, WA 98116</p>
           <br />
-          <br />
-          <form method="POST" name="myemailform" action="form-to-email.php">
+          <h3>Contact Us</h3>
+          <form method="POST" name="myemailform" action="form-to-email.php" id="email-form">
             <p>
-              <label for="name">Enter Name: </label><br>
-              <input type="text" name="name">
+              <label for="name"><em>Enter Name: </em></label>
+              <br />
+              <input type="text" name="name" class="form-field">
             </p>
             <p>
-              <label for="email">Enter Email Address:</label><br>
-              <input type="text" name="email">
+              <label for="email"><em>Enter Email Address: </em></label>
+              <br />
+              <input type="text" name="email" class="form-field">
             </p>
             <p>
-              <label for="message">Enter Message:</label> <br>
-              <textarea name="message"></textarea>
+              <label for="message"><em>Enter Message: </em></label>
+              <br />
+              <textarea name="message" class="form-field"></textarea>
             </p>
-            <input type="submit" name="submit" value="Submit"/>
+            <input type="submit" name="submit" value="Submit" id="submit-button"/>
         </form>
         </div>
       </div>

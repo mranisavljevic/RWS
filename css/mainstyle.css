@@ -271,6 +271,20 @@ header li {
   display: none;
 }
 
+#email-form {
+  width: 70%;
+  float: left;
+}
+
+.form-field {
+  width: 100%;
+}
+
+#submit-button {
+  width: 20%;
+  margin: auto;
+}
+
 footer {
   margin-top: 250px;
   text-align: center;
