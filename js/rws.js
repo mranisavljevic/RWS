@@ -21,10 +21,25 @@ $(document).ready(function() {
 
   $("form").on("submit", function(e) {
     e.preventDefault();
-    $(this).done(function() {
-      $("<h1>Submitted</h1>").insertBefore("#submit-button");
+    var name = document.getElementById("name-field").value;
+    var email = document.getElementById("email-field").value;
+    var msg = document.getElementById("message-field").value;
+    $.ajax({
+        type: "POST",
+        url: "form-to-email.php",
+        data: {name: name, email: email, message: msg}
+      }).done(function() {
+        $("<h4>Submitted</h4>").insertBefore("#submit-button");
+        $("#submit-button").hide();
+      });
+    /*
+    var confirmClick = function() {
+      $("<h4>Submitted</h4>")
+        .insertBefore("#submit-button");
       $("#submit-button").hide();
-    });
+    };
+    confirmClick();
+    */
   });
 
   var testAnim = function(icon) {
