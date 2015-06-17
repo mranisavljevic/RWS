@@ -54,4 +54,9 @@ $(document).ready(function() {
     testAnim(iconImg);
   });
 
+  $(".open-form")
+    .on("click", function(e) {
+      e.preventDefault();
+    });
+
 });

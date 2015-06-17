@@ -24,7 +24,11 @@ if(IsInjected($visitor_email))
 $email_from = 'itstop3@gmail.com';//<== update the email address
 $email_subject = "New webform submission";
 $email_body = "You have received a new message from $name.\n".
+    "\n".
     "Here is the message:\n $message \n".
+    "\n".
+    "Reply to them at $visitor_email. \n".
+    "\n".
 
 $to = "itstop3@gmail.com";//<== update the email address
 $headers = "From: $email_from \r\n";
