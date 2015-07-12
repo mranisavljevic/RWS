@@ -83,7 +83,11 @@ header li {
 
 .gallery-img {
   width: 33%;
-  padding: 0 0 65px 0;
+  padding: 0 0 5px 0;
+}
+
+#gallery h3 {
+  padding: 0 10% 65px;
 }
 
 #mainlogo {
@@ -100,7 +104,7 @@ header li {
   padding: 0;
 }
 
-#main-svc li {
+.main-li {
   display: inline-block;
   background-color: #F9F9F9;
   clear: right;
@@ -206,7 +210,7 @@ header li {
   padding: 0;
 }
 
-#secondary-svc li {
+.secondary-li {
   background-color: #F9F9F9;
   padding: 0 2.5%;
   margin: 16px 2.5%;
