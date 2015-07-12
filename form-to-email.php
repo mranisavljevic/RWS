@@ -27,7 +27,7 @@ $email_body = "You have received a new message from $name.\n".
     "\n".
     "Here is the message:\n $message \n".
     "\n".
-    "Reply to them at $visitor_email. \n".
+    "Reply at $visitor_email. \n".
     "\n".
 
 $to = "itstop3@gmail.com";//<== update the email address

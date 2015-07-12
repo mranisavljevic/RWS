@@ -79,7 +79,7 @@
         <ul>
           <li class="clearfix secondary-li">
             <h1>Cart Delivery & Removal</h1>
-            <p class="svc-desc">If you are a manufacturer of carts and containers we have extensive experience with assembly, delivery and removal programs. <a class="open-form" href=#>Contact us to see how we can assist you with your project</a>.</p>
+            <p class="svc-desc">If you are a manufacturer of carts and containers we have extensive experience with assembly, delivery and removal programs. <a class="open-form" href="">Contact us to see how we can assist you with your project</a>.</p>
           </li>
           <li class="clearfix secondary-li">
             <h1>Container Labeling</h1>
@@ -179,6 +179,27 @@
       </ul>
     </div>
   -->
+    <div id="popup-wrapper">
+      <form method="POST" name="myemailform" action="form-to-email.php" id="popup-form">
+        <p>
+          <label for="name"><em>Enter Name: </em></label>
+          <br />
+          <input type="text" name="name" class="form-field" id="popup-name-field">
+        </p>
+        <p>
+          <label for="email"><em>Enter Email Address: </em></label>
+          <br />
+          <input type="text" name="email" class="form-field" id="popup-email-field">
+        </p>
+        <p>
+          <label for="message"><em>Enter Message: </em></label>
+          <br />
+          <textarea name="message" class="form-field" id="popup-message-field"></textarea>
+        </p>
+        <input type="submit" name="submit" value="Submit" id="popup-submit-button"/>
+        <input type="button" name="cancel" value="Cancel" id="popup-cancel-button"/>
+      </form>
+    </div>
   </main>
   <footer>
     <p>Rainier Waste Solutions &copy; 2015</p>
