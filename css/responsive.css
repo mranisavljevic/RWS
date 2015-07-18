@@ -52,10 +52,10 @@
 
   #main-svc li {
   display: block;
-  /*clear: right;*/
+  /*clear: right;
+  margin: auto;*/
   width: 70%;
   padding: 0 4%;
-  margin: auto;
   margin-bottom: 10px;
   }
 

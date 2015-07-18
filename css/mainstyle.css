@@ -58,6 +58,10 @@ a:hover {
   color: slategrey;
 }
 
+p {
+  text-indent: 2em;
+}
+
 header {
   background-color: rgba(209, 209, 209, 0.5);
 }
@@ -105,15 +109,21 @@ header li {
 }
 
 .main-li {
-  display: inline-block;
+  display: block;
   background-color: #F9F9F9;
   clear: right;
-  width: 25%;
-  padding: 10px 4%;
+  width: 50%;
+  margin: 20px auto;
+  padding: 2.5%;
   border-radius: 2%;
   box-shadow: 0 0 10px slategrey;
   -webkit-box-shadow: 0 0 10px slategrey;
   -moz-box-shadow: 0 0 10px slategrey;
+}
+
+.detail-list {
+  margin-left: 5%;
+  list-style-type: disc;
 }
 
 .section-title {
@@ -128,9 +138,10 @@ header li {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 100%;
+  width: 50%;
   height: 0;
-  padding-top: 100%;
+  padding-top: 50%;
+  margin: auto;
   position: relative;
   box-shadow: 0 10px 6px -6px #777;
   -webkit-box-shadow: 0 10px 6px -6px #777;
@@ -170,6 +181,7 @@ header li {
 #button-label {
   text-align: center;
   margin: 0;
+  text-indent: 0;
 }
 
 .more-less {
@@ -223,6 +235,14 @@ header li {
   -moz-box-shadow: 0 0 10px slategrey;
 }
 
+.secondary-li:nth-child(odd) {
+  margin-right: 3.5%;
+}
+
+.secondary-li:nth-child(even) {
+  margin-left: 1.5%;
+}
+
 #about-us {
   margin-top: 10px;
 }
@@ -253,6 +273,7 @@ header li {
 #contact-us p {
   margin: 5px 0;
   padding: 0;
+  text-indent: 0;
 }
 
 #contact-title {
@@ -317,6 +338,10 @@ header li {
   padding: 10px;
   margin-top: 20px;
   opacity: 1;
+}
+
+#popup-form p {
+  text-indent: 0;
 }
 
 footer {
