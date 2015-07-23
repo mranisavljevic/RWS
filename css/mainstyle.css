@@ -51,15 +51,11 @@ a:link {
 }
 
 a:visited {
-  color: #00B6FF;
+  color: #2A2669;
 }
 
 a:hover {
   color: slategrey;
-}
-
-p {
-  text-indent: 2em;
 }
 
 header {
@@ -257,8 +253,8 @@ header li {
 
 #about-us p {
   width: 60%;
-  display: inline;
-  float: left;
+  display: block;
+  margin: auto;
   padding: 0 4.5% 0 2.5%;
 }
 
@@ -310,21 +306,25 @@ header li {
   width: 100%;
 }
 
-#submit-button, #popup-cancel-button, #popup-submit-button {
-  width: 20%;
+.submit-button {
   margin: auto;
+  min-width: 75px;
+}
+
+#submit-button {
 }
 
 #popup-wrapper {
   width: 100%;
   height: 100%;
-  opacity: .95;
   top: 0;
   left: 0;
   display: none;
   position: fixed;
   background-color: #313131;
-  overflow: auto
+  background-color: rgba(49, 49, 49, 0.95);
+  overflow: auto;
+  z-index: 11;
 }
 
 #popup-form {
@@ -337,7 +337,7 @@ header li {
   -moz-box-shadow: 0 0 10px slategrey;
   padding: 10px;
   margin-top: 20px;
-  opacity: 1;
+  opacity: 1.0;
 }
 
 #popup-form p {

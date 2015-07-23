@@ -32,14 +32,6 @@ $(document).ready(function() {
         $("<h4>Submitted</h4>").insertBefore("#submit-button");
         $("#submit-button").hide();
       });
-    /*
-    var confirmClick = function() {
-      $("<h4>Submitted</h4>")
-        .insertBefore("#submit-button");
-      $("#submit-button").hide();
-    };
-    confirmClick();
-    */
   });
 
   var testAnim = function(icon) {
@@ -61,17 +53,6 @@ $(document).ready(function() {
       $("html, body").css("overflow", "hidden");
     });
 
-  /*
-  //Function To Display Popup
-  function showPopupForm() {
-  document.getElementById('popup-form').style.display = "block";
-  }
-  //Function to Hide Popup
-  function hidePopupForm() {
-  document.getElementById('popup-form').style.display = "none";
-  }
-  */
-
     $("#popup-form").on("submit", function(e) {
     e.preventDefault();
     var name = document.getElementById("popup-name-field").value;
@@ -82,11 +63,6 @@ $(document).ready(function() {
         url: "form-to-email.php",
         data: {name: name, email: email, message: msg}
       }).done(function() {
-        /*
-        $("<h4>Submitted</h4>").insertBefore("#submit-button");
-        $("#submit-button").hide();
-        */
-        console.log("does this run?");
         $("#popup-wrapper").css("display", "none");
         $("html, body").css({
           "overflow": "auto",
@@ -104,5 +80,17 @@ $(document).ready(function() {
         "height": "auto"
       });
     });
+
+  $(document).keyup(function(e) {
+     if (e.keyCode == 27) {
+      if ($("#popup-wrapper").css("display") == "block")
+        $("#popup-wrapper").css("display", "none");
+        $("html, body").css({
+          "overflow": "auto",
+          "height": "auto"
+          });
+    }
+
+});
 
 });
