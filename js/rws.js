@@ -19,7 +19,7 @@ $(document).ready(function() {
           .top);
   });
 
-  $("form").on("submit", function(e) {
+  $("#email-form").on("submit", function(e) {
     e.preventDefault();
     var name = document.getElementById("name-field").value;
     var email = document.getElementById("email-field").value;
