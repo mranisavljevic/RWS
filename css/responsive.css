@@ -133,6 +133,12 @@
     width: 32%;
   }
 
+  #mainlogo {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
 #popup-form {
   width: 90%;
   }
@@ -158,5 +164,9 @@
 header li {
   font-size: 0.6em;
   }
+
+#header-phone {
+  font-size: 0.6em;
+}
 
 }
