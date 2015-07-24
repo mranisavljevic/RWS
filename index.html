@@ -15,8 +15,8 @@
 <body>
   <header class="clearfix">
     <img src="img/Logo.png" id="mainlogo" alt="Rainer Waste Solutions Logo">
-    <p id="phone-p" class="header-phone">(206) 999-6607</p>
-    <p id="phone-a" class="header-phone"><a href="tel:206-999-6607">(206) 999-6607</a></p>
+    <p class="phone-p header-phone">(206) 999-6607</p>
+    <p class="phone-a header-phone"><a href="tel:206-999-6607">(206) 999-6607</a></p>
     <ul class="clearfix">
       <li><h1><a href="#services">Services</a></h1></li>
       <li><h1><a href="#about-us">About</a></h1></li>
@@ -119,11 +119,11 @@
       </div>
       <div id="show-more">
         <button name="arrow" class="more-less pure-button">
-          <p id="button-label">More</p>
+          <p class="button-label">More</p>
           <img src="img/icons/DropArrow.png" alt="Drop Arrow">
         </button>
         <button name="arrow" class="more-less pure-button hide" id="collapse">
-          <p id="button-label">Less</p>
+          <p class="button-label">Less</p>
           <img src="img/icons/CollapseArrow.png" alt="Drop Arrow">
         </button>
       </div>
@@ -142,8 +142,8 @@
         <p><h4>Chris Bridges<em>, Owner</em></h4></p>
         <div id="contact-info" class="clearfix">
           <p><a href="mailto:chris@rainierwastesolutions.com">Chris@RainierWasteSolutions.com</a></p>
-          <p id="phone-p">(206) 999-6607</p>
-          <p id="phone-a"><a href="tel:206-999-6607">(206) 999-6607</a></p>
+          <p class="phone-p">(206) 999-6607</p>
+          <p class="phone-a"><a href="tel:206-999-6607">(206) 999-6607</a></p>
           <br />
           <p>PO Box 16733</p>
           <p>Seattle, WA 98116</p>
@@ -198,7 +198,7 @@
   <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
   <script type="text/javascript" src="js/rws.js"></script>
   <script type="text/javascript" src="js/gen_validatorv31.js"></script>
-  <script language="JavaScript">
+  <script type="text/javascript">
 var frmvalidator  = new Validator("myemailform");
 frmvalidator.addValidation("name","req","Please provide your name");
 frmvalidator.addValidation("email","req","Please provide your email");

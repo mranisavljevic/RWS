@@ -193,7 +193,7 @@ header li {
   margin: 50px 0;
 }
 
-#button-label {
+.button-label {
   text-align: center;
   margin: 0;
   text-indent: 0;
@@ -307,7 +307,7 @@ header li {
   margin: 20px 0;
 }
 
-#phone-a {
+.phone-a {
   display: none;
 }
 

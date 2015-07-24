@@ -56,11 +56,11 @@
   width: 32.8%;
   }
 
-  #phone-p {
+  .phone-p {
     display: none;
   }
 
-  #phone-a {
+  .phone-a {
     display: inline-block;
   }
 
