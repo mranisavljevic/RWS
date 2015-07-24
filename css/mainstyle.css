@@ -58,14 +58,33 @@ a:hover {
   color: slategrey;
 }
 
+.open-form:link {
+  color: #00B6FF;
+  }
+
+.open-form:visited {
+  color: #00B6FF;
+}
+
+.open-form:hover {
+  color: slategrey;
+}
+
 header {
   background-color: rgba(209, 209, 209, 0.5);
+}
+
+.header-phone {
+  display: inline;
+  float: left;
+  margin: 30px 0 0 100px;
+  clear: left;
 }
 
 header ul {
   list-style: none;
   float: right;
-  margin: 125px 20px 0 0;
+  margin: -10px 20px 0 0;
 }
 
 header li {

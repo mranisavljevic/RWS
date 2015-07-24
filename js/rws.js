@@ -29,8 +29,11 @@ $(document).ready(function() {
         url: "form-to-email.php",
         data: {name: name, email: email, message: msg}
       }).done(function() {
-        $("<h4>Submitted</h4>").insertBefore("#submit-button");
-        $("#submit-button").hide();
+        $("<h4>Thank you for your submission</h4>").insertBefore("#submit-button");
+        //$("#submit-button").hide();
+      $("#name-field").val("");
+      $("#email-field").val("");
+      $("#message-field").val("");
       });
   });
 
@@ -55,9 +58,6 @@ $(document).ready(function() {
 
     $("#popup-form").on("submit", function(e) {
     e.preventDefault();
-    var name = document.getElementById("popup-name-field").value;
-    var email = document.getElementById("popup-email-field").value;
-    var msg = document.getElementById("popup-message-field").value;
     $.ajax({
         type: "POST",
         url: "form-to-email.php",
@@ -68,6 +68,9 @@ $(document).ready(function() {
           "overflow": "auto",
           "height": "auto"
         });
+      $("#popup-name-field").val("");
+      $("#popup-email-field").val("");
+      $("#popup-message-field").val("");
       });
 
   });
@@ -79,6 +82,9 @@ $(document).ready(function() {
         "overflow": "auto",
         "height": "auto"
       });
+      $("#popup-name-field").val("");
+      $("#popup-email-field").val("");
+      $("#popup-message-field").val("");
     });
 
   $(document).keyup(function(e) {
@@ -89,6 +95,9 @@ $(document).ready(function() {
           "overflow": "auto",
           "height": "auto"
           });
+        $("#popup-name-field").val("");
+        $("#popup-email-field").val("");
+        $("#popup-message-field").val("");
     }
 
 });
