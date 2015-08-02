@@ -28,7 +28,7 @@ $(document).ready(function() {
         type: "POST",
         url: "form-to-email.php",
         data: {name: name, email: email, message: msg}
-      }).done(function() {
+      }).success(function() {
         $("<h4>Thank you for your submission</h4>").insertBefore("#submit-button");
         //$("#submit-button").hide();
       $("#name-field").val("");
