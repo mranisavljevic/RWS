@@ -24,17 +24,19 @@ $(document).ready(function() {
     var name = document.getElementById("name-field").value;
     var email = document.getElementById("email-field").value;
     var msg = document.getElementById("message-field").value;
+    if (name && email && msg) {
     $.ajax({
         type: "POST",
         url: "form-to-email.php",
         data: {name: name, email: email, message: msg}
-      }).success(function() {
+      }).done(function() {
         $("<h4>Thank you for your submission</h4>").insertBefore("#submit-button");
         //$("#submit-button").hide();
       $("#name-field").val("");
       $("#email-field").val("");
       $("#message-field").val("");
       });
+    };
   });
 
   var testAnim = function(icon) {
