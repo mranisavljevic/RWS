@@ -1,0 +1,172 @@
+@media screen and (max-width: 1110px){
+
+  .section-title {
+    font-size: 3em;
+  }
+
+  body {
+    font-size: 1em;
+  }
+
+  .header-phone {
+    font-size: 1.5em;
+  }
+
+  header ul {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 800px){
+
+  header ul {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+  }
+
+  .header-phone {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .header-phone a {
+    width: 50%;
+  }
+
+  #mainlogo {
+    width: 50%;
+    margin: 90px 25% 0;
+  }
+
+  body {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 650px){
+
+  body {
+    font-size: 1em;
+  }
+
+  .gallery-img {
+  width: 32.8%;
+  }
+
+  .phone-p {
+    display: none;
+  }
+
+  .phone-a {
+    display: inline-block;
+  }
+
+  #secondary-svc h1.long-name {
+    font-size: 1em;
+  }
+
+  #main-svc li {
+  display: block;
+  /*clear: right;
+  margin: auto;*/
+  width: 70%;
+  padding: 0 4%;
+  margin-bottom: 10px;
+  }
+
+  .icon-back {
+    width: 50%;
+    padding-top: 50%;
+    margin: auto;
+    margin-top: 10px
+  }
+
+  .more-less {
+    width: 20%;
+  }
+
+  #about-us img {
+  width: 40%;
+  display: block;
+  float: none;
+  border: 1px solid black;
+  margin: auto;
+  }
+
+  #about-us p {
+  width: 70%;
+  display: block;
+  float: none;
+  margin: auto;
+  margin-top: 10px;
+  }
+
+#popup-form {
+  width: 70%;
+  }
+
+.form-field {
+  width: 90%;
+}
+
+}
+
+@media screen and (max-width: 610px){
+
+#secondary-svc li {
+  padding: 0 2.5%;
+  margin: auto;
+  margin-bottom: 10px;
+  display: block;
+  width: 60%;
+  float: none;
+  }
+
+}
+
+@media screen and (max-width: 445px){
+
+  .gallery-img {
+    width: 32%;
+  }
+
+  #mainlogo {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+#popup-form {
+  width: 90%;
+  }
+}
+
+@viewport {
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+@-ms-viewport {
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+
+@media screen and (max-width: 370px){
+
+#contact-title {
+  min-width: 0;
+  width: 90%;
+  }
+
+header li {
+  font-size: 0.6em;
+  }
+
+#header-phone {
+  font-size: 0.6em;
+}
+
+}
