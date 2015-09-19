@@ -21,7 +21,7 @@ if(IsInjected($visitor_email))
     exit;
 }
 
-$email_from = 'itstop3@gmail.com';//<== update the email address
+$email_from = 'admin@rainierwastesolutions.com';//<== update the email address
 $email_subject = "New webform submission";
 $email_body = "You have received a new message from $name.\n".
     "\n".
@@ -30,7 +30,7 @@ $email_body = "You have received a new message from $name.\n".
     "Reply at $visitor_email. \n".
     "\n".
 
-$to = "itstop3@gmail.com";//<== update the email address
+$to = "admin@rainierwastesolutions.com";//<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
